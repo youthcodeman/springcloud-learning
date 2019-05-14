@@ -5,9 +5,7 @@ import org.hzg.cloud.entity.User;
 import org.hzg.cloud.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.netflix.discovery.EurekaClient;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 
@@ -39,4 +37,16 @@ public class UserController {
     ServiceInstance localServiceInstance = this.discoveryClient.getLocalServiceInstance();
     return localServiceInstance;
   }
+
+  @PostMapping("/user")
+  public User postUser(@RequestBody User user) {
+    return user;
+  }
+
+  // 该请求不会成功
+  @GetMapping("/get-user")
+  public User getUser(User user) {
+    return user;
+  }
+
 }
