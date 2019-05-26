@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: microservice-gateway-zuul
+server:
+  port: 8040
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+zuul:     #这俩个配置连用，影响的是全局的，它的意思是为所有代理的微服务都增加一个/api 的前缀，strip-prefix的意思是是否在请求url中去掉这个前缀
+  prefix: /api
+  strip-prefix: true
+logging:
+  level:
+    com.netflix: DEBUG

@@ -35,6 +35,7 @@
 		<module>microservice-discovery-hystrix-turbin2</module>
 		<module>microservice-discovery-hystrix-turbin3</module>
 		<module>microservice-discovery-eureka-ha</module>
+		<module>microservice-gateway-zuul</module>
 	</modules>
 
 	<parent>
