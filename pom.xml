@@ -23,6 +23,8 @@
 		<module>microservice-consumer-movie-ribbon-customer-configuration-properties</module>
 		<module>microservice-consumer-movie-ribbon-without-eureka</module>
 		<module>microservice-consumer-movie-ribbon-with-hystrix</module>
+		<module>microservice-consumer-movie-ribbon-with-hystrix2</module>
+		<module>microservice-consumer-movie-ribbon-with-hystrix3</module>
 		<module>microservice-consumer-movie-feign-helloworld</module>
 		<module>microservice-consumer-movie-feign-customerlize</module>
 		<module>microservice-consumer-movie-feign-with-hystrix</module>
@@ -30,6 +32,8 @@
 		<module>microservice-consumer-movie-feign-with-hystrix-hystrixfactoty</module>
 		<module>microservice-discovery-hystrix-dashbord</module>
 		<module>microservice-discovery-hystrix-turbin</module>
+		<module>microservice-discovery-hystrix-turbin2</module>
+		<module>microservice-discovery-hystrix-turbin3</module>
 		<module>microservice-discovery-eureka-ha</module>
 	</modules>
 
