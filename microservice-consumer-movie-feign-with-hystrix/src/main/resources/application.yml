@@ -1,6 +1,6 @@
 spring:
   application:
-    name: microservice-consumer-movie
+    name: microservice-consumer-movie-feign-with-hystrix
 server:
   port: 7901
 eureka:
