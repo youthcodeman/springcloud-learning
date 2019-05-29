@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: microservice-gateway-zuul
+server:
+  port: 8040
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+zuul:    # path 和 stripPrefix连用的话则表示对某个指定的微服务的作用
+  routes:
+    microservice-provider-user:
+      path: /user/**
+      stripPrefix: true
+
