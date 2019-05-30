@@ -40,6 +40,7 @@
 		<module>microservice-gateway-zuul-fallback</module>
 		<module>microservice-gateway-zuul-filter</module>
 		<module>microservice-sidecar</module>
+		<module>microservice-config-server</module>
 	</modules>
 
 	<parent>
