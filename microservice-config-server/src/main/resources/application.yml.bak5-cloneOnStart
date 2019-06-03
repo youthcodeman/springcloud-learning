@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/youthcodeman/spring-cloud-learning-config
+          clone-on-start: true   #全局配置项目启动的时候去git上把相应的资源下下来
+          repos:
+            simple: https://gitee.com/youthcodeman/simple
+            special:
+              pattern: special*/dev*,special*/test*
+              uri: https://gitee.com/youthcodeman/special
+              cloneOnStart: false       # 局部配置，只针对special的仓库，在启动的时候不下改库里面的资源，在第一次请求的时候，对库里面的资源进行访问，这个局部配置的优先级高于全局配置的优先级
+
