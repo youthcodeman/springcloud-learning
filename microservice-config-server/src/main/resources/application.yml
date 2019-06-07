@@ -6,6 +6,6 @@ spring:
       server:
         git:
           uri: https://gitee.com/youthcodeman/spring-cloud-learning-config
-          username: ****
-          password: ****  #私有仓库下的账号与密码的配置
+          username:
+          password:   #私有仓库下的账号与密码的配置
 
