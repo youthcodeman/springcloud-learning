@@ -30,6 +30,7 @@ public class UserServiceConfiguration {
      */
     @Bean
     public IRule ribbonRule(IClientConfig iClientConfig) {
+
         return new RandomRule();
     }
 
